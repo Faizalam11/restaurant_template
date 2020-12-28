@@ -1,7 +1,8 @@
-.bg-img {
-    filter: grayscale(50%);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    font-family:"Amatic SC", sans-serif;
+    font-size: 28px;
+    background-color: #303030;
+    color:white;
 }
 .nav-bar {
     display: block;
@@ -29,9 +30,30 @@
     left: 40%;
     text-align: center;
 }
-.black_block {
+.gray_block {
     position: absolute;
     padding: 0.8%;
-    background-color: black;
+    background-color: #303030;
     color: white;
+    opacity: 60%;
+}
+#login{
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    transform: translate(-25%, -25%);
+}
+#register{
+    position: fixed;
+    left: 75%;
+    top: 50%;
+    transform: translate(-75%, -25%);
+}
+input[type=text], input[type=password]{
+    display: inline-block;
+    width: 50%;
+}
+label{
+    display: inline-block;
+    width:45%;
 }

@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Portal</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/template.css">
+    <script src="login.js"></script>
+    <style>
+        div>fieldset{
+            position: fixed;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <title>Employee Portal</title>
 </head>
 <body>
-    
+    <nav class="nav-bar">
+        <a class="nav-item hover_inverse" href="index.html">HOME</a>
+        <a class="nav-item hover_inverse" href="menu.html">MENU</a>
+        <a class="nav-item hover_inverse" href="order.html">ORDER</a>
+        <a class="nav-item hover_inverse" href="about.html">ABOUT</a>
+        <a class="nav-item hover_inverse" href="contact.html">CONTACT</a>
+        <a class="nav-item hover_inverse" href="login.html">LOGIN/REGISTER</a>
+    </nav>
+
+    <!-- This works using javascript now but it would normally use server-side code. -->
+    <!-- User Name: admin Password: admin -->
+    <div>
+        <fieldset>
+            <legend>Employee Login</legend>
+            <label for="UserName">User Name:</label>
+            <input type="text" name="UserName" id="UN" required>
+            <br>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="PS" required>
+            <br>
+            <input style="padding: 2%;left:40%;top:45%;position:relative;background-color:gainsboro;" type="submit"
+            onclick="Login()" value="Submit">
+        </fieldset>
+    </div>
 </body>
 </html>

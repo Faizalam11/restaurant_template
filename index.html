@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Template</title>
+    <title>Template Home</title>
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link rel="stylesheet" href="./css/template.css">
     <style>
-        body {
-            font-family:"Amatic SC", sans-serif;
-            font-size: 28px;
-            background-color: black;
-            color:white;
-        }
         .bg-img {
-            background-image: url(https://www.w3schools.com/w3images/pizza.jpg);
+            background-image: url(banner.png);
             min-height: 750px;
+            filter: grayscale(25%);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        .heading {
-            color: #fff;
-            font-size: 120px;
-        }
-        #lower_left {
-            bottom: 13px;
-            left: 7px;
-        }
-        #lower_middle {
-            top: 65%;
-            left: 46%;
+
+        #lower_right_middle {
+            top: 75%;
+            left: 75%;
         }
     </style>
 </head>
+
 <body>
     <div class="bg-img">
         <nav class="nav-bar">
-            <a class="nav-item hover_inverse" href="home.html">HOME</a>
+            <a class="nav-item hover_inverse" href="index.html">HOME</a>
             <a class="nav-item hover_inverse" href="menu.html">MENU</a>
             <a class="nav-item hover_inverse" href="order.html">ORDER</a>
             <a class="nav-item hover_inverse" href="about.html">ABOUT</a>
             <a class="nav-item hover_inverse" href="contact.html">CONTACT</a>
             <a class="nav-item hover_inverse" href="login.html">LOGIN/REGISTER</a>
         </nav>
-        <span class="middle_centre heading" >THIN<br>CRUST PIZZA</span>
-        <span id="lower_middle"class="black_block hover_inverse"><a href="menu.html" style="color: inherit; text-decoration: none;">LET ME SEE THE MENU</a></span>
-        <span id="lower_left" class="black_block">Open from 10am to 12pm</span> 
+
+        <span id="lower_right_middle" class="gray_block hover_inverse"><a href="menu.html"
+                style="color: inherit; text-decoration: none;">LET ME SEE THE MENU</a></span>
+
+        <!-- Logo And Restaurant Name -->
+        <span class="gray_block" style="left:5%;top:20%;">
+            <p>Your Logo &emsp; Restaurant Name</p>
+        </span>
+
+        <!-- Description of restaurant -->
+        <span class="gray_block" style="left:5%;top:30%;width:35%;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Est placerat in egestas erat imperdiet sed euismod. Orci nulla pellentesque
+                dignissim enim.</p>
+        </span>
+
+        <!-- Opening and Closing Timing -->
+        <span class="gray_block" style="left:15%;top:70%;">Timing Here</span>
     </div>
 </body>
+
 </html>

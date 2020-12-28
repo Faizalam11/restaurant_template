@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/template.css">
+    <script>
+        function check_pass() {
+            if(document.getElementById("PS").value != document.getElementById("VPS").value){
+                document.getElementById("VPS").setCustomValidity("Password and Verify Password are not same.");
+            }
+            else{
+                document.getElementById("VPS").setCustomValidity("");
+            }
+        }
+    </script>
     <title>Login</title>
 </head>
+
 <body>
-    
+    <nav class="nav-bar">
+        <a class="nav-item hover_inverse" href="index.html">HOME</a>
+        <a class="nav-item hover_inverse" href="menu.html">MENU</a>
+        <a class="nav-item hover_inverse" href="order.html">ORDER</a>
+        <a class="nav-item hover_inverse" href="about.html">ABOUT</a>
+        <a class="nav-item hover_inverse" href="contact.html">CONTACT</a>
+        <a class="nav-item hover_inverse" href="login.html">LOGIN/REGISTER</a>
+    </nav>
+
+    <!-- This does nothing.
+        A server-side would not be implemented in this template. -->
+    <div id="login">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="UserName">User Name:</label>
+                <input type="text" name="UserName" id="lUN" required>
+                <br>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" id="lPS" required>
+                <br>
+                <input style="padding: 2%;left:40%;top:45%;position:relative;background-color:gainsboro;" type="submit"
+                    value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div id="register">
+        <form action="" method="post">
+            <fieldset style="width:100%">
+                <legend>Register</legend>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="EM" required>
+                <br>
+                <label for="UserName">User Name:</label>
+                <input type="text" name="UserName" id="UN" required>
+                <br>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" id="PS" required>
+                <br>
+                <label for="VPassword">Verify Password:</label>
+                <input type="password" name="VPassword" id="VPS" required>
+                <br>
+                <input style="padding: 2%;left:40%;top:45%;position:relative;background-color:gainsboro;" type="submit"
+                onclick="check_pass()" value="Submit">
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
