@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./css/template.css">
     <script>
         function check_pass() {
-            if(document.getElementById("PS").value != document.getElementById("VPS").value){
+            if (document.getElementById("PS").value != document.getElementById("VPS").value) {
                 document.getElementById("VPS").setCustomValidity("Password and Verify Password are not same.");
             }
-            else{
+            else {
                 document.getElementById("VPS").setCustomValidity("");
             }
         }
@@ -21,9 +21,10 @@
 
 <body>
     <nav class="nav-bar">
+        <img src="https://seeklogo.com/images/R/restaurant-chief-food-hotel-logo-9DE9D03812-seeklogo.com.png"
+            alt="Restaurant Logo" height=40px>
         <a class="nav-item hover_inverse" href="index.html">HOME</a>
         <a class="nav-item hover_inverse" href="menu.html">MENU</a>
-        <a class="nav-item hover_inverse" href="order.html">ORDER</a>
         <a class="nav-item hover_inverse" href="about.html">ABOUT</a>
         <a class="nav-item hover_inverse" href="contact.html">CONTACT</a>
         <a class="nav-item hover_inverse" href="login.html">LOGIN/REGISTER</a>
@@ -63,7 +64,7 @@
                 <input type="password" name="VPassword" id="VPS" required>
                 <br>
                 <input style="padding: 2%;left:40%;top:45%;position:relative;background-color:gainsboro;" type="submit"
-                onclick="check_pass()" value="Submit">
+                    onclick="check_pass()" value="Submit">
             </fieldset>
         </form>
     </div>

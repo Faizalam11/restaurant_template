@@ -57,3 +57,28 @@ label{
     display: inline-block;
     width:45%;
 }
+.centre{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+.menu>table{
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    border-radius: 1%;
+    width: 100%;
+}
+th{
+    padding: 4%;
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    border-radius: 1%;
+}
+td{
+    padding: 4%;
+}
+.hide{
+    display: none;
+}
